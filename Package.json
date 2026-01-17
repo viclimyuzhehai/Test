@@ -1,0 +1,25 @@
+{
+  "name": "vicXcode",
+  "version": "0.2.0",
+  "private": true,
+  "main": "electron/main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "electron:dev": "concurrently \"npm:dev\" \"wait-on http://localhost:5173 && electron .\"",
+    "lint": "eslint . --ext .js,.jsx"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "monaco-editor": "^0.40.0",
+    "@monaco-editor/react": "^5.0.0"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0",
+    "electron": "^26.0.0",
+    "concurrently": "^8.0.0",
+    "wait-on": "^7.0.0"
+  }
+}
