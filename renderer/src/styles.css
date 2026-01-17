@@ -1,0 +1,17 @@
+body, html, #root { height: 100%; margin: 0; font-family: Inter, Arial, sans-serif }
+.app-root { display: flex; flex-direction: column; height: 100% }
+.toolbar { background: #111; color: #fff; padding: 8px; display:flex; gap:8px; align-items:center }
+.main { display: flex; flex:1; height: calc(100vh - 40px) }
+.left { width: 360px; border-right: 1px solid #ddd; padding:8px; overflow:auto }
+.editor { flex:1; padding:8px }
+.file-tree ul { list-style:none; padding:0; margin:0 }
+.file-tree li { margin:4px 0 }
+.file-button { background:transparent; border: none; text-align:left; padding:4px; cursor:pointer }
+.file-button:hover { background: rgba(0,0,0,0.05) }
+.agent-panel { margin-top: 12px }
+.todo-item { border: 1px solid #e3e3e3; padding:8px; margin:8px 0; border-radius:4px }
+.todo-actions { display:flex; gap:6px; margin-top:6px }
+.agent-log { background:#0b0b0b; color:#0f0; padding:8px; height:160px; overflow:auto; white-space:pre-wrap }
+.editor-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; }
+.suggestions { margin-top:8px; background:#f8f8f8; padding:6px; border-radius:4px }
+.empty { display:flex; align-items:center; justify-content:center; height:70vh; color:#666 }
